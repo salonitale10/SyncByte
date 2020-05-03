@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MVCEmployeeApplication</display-name>
+  <servlet>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.app.controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <display-name>RegistrationServlet</display-name>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <servlet-class>com.app.controller.RegistrationServlet</servlet-class>
+    </servlet>
+    
+    
+    <servlet>
+        <display-name>DeleteEmpServlet</display-name>
+        <servlet-name>DeleteEmpServlet</servlet-name>
+        <servlet-class>com.app.controller.DeleteEmpServlet</servlet-class>
+    </servlet>
+     
+    <servlet>
+        <display-name>ValidateServlet</display-name>
+        <servlet-name>ValidateServlet</servlet-name>
+        <servlet-class>com.app.controller.ValidateServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <display-name>AdminLoginServlet</display-name>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>com.app.controller.AdminLoginServlet</servlet-class>
+    </servlet>
+    
+    
+    <servlet>
+        <display-name>AdminRegistrationServlet</display-name>
+        <servlet-name>AdminRegistrationServlet</servlet-name>
+        <servlet-class>com.app.controller.AdminRegistrationServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet-mapping>
+        <servlet-name>DeleteEmpServlet</servlet-name>
+        <url-pattern>/DeleteEmpServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>AdminRegistrationServlet</servlet-name>
+        <url-pattern>/AdminRegistrationServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/AdminLoginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ValidateServlet</servlet-name>
+        <url-pattern>/ValidateServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/RegistrationServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>firstPage.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
